@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js/flexible.js"></script>
+    <script src="js/flexible_css.js"></script>
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="header-r">
+        <a href="javascript:;">
+            <i class="iconfont icon-fangdajing"></i>
+            寻找宝贝店铺
+        </a>
+    </div>
+</header>
+<link rel="stylesheet" href="css/swiper.min.css">
+<div class="banner">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/banner-1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/banner-2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="img/banner-3.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.banner .swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        }
+    });
+</script>
+<div class="vertical-view">
+    <ul>
+        <li>
+            <img src="img/banner-4.png" alt="">
+            <span>天猫</span>
+        </li>
+        <li>
+            <img src="img/banner-5.png" alt="">
+            <span>聚划算</span></li>
+        <li>
+            <img src="img/banner-6.png" alt="">
+            <span>天猫国际</span></li>
+        <li>
+            <img src="img/banner-7.png" alt="">
+            <span>外卖</span></li>
+        <li>
+            <img src="img/banner-8.png" alt="">
+            <span>天猫超市</span></li>
+        <li>
+            <img src="img/banner-9.png" alt="">
+            <span>充值中心</span></li>
+        <li>
+            <img src="img/banner-10.png" alt="">
+            <span>飞猪旅行</span></li>
+        <li>
+            <img src="img/banner-11.png" alt="">
+            <span>领金币</span></li>
+        <li>
+            <img src="img/banner-12.png" alt="">
+            <span>拍卖</span></li>
+        <li>
+            <img src="img/banner-13.png" alt="">
+            <span>分类</span></li>
+    </ul>
+</div>
+<link rel="stylesheet" href="css/swiper.min.css">
+<div class="horizontal-view">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><span>汽车</span>纯电动，100公里续航，售价4万元买吗</div>
+            <div class="swiper-slide"><span>母婴</span>婆婆有没有把你当自家人，这3点就能看出</div>
+            <div class="swiper-slide"><span>手机</span>魅族全面屏曝：侧面指纹，坐实新Logo</div>
+            <div class="swiper-slide"><span>星座</span>这些星座见不得别人好！</div>
+            <div class="swiper-slide"><span>围观</span>你适合扎发还是散发，就看有没有这些特征</div>
+        </div>
+    </div>
+</div>
+<script src="js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.horizontal-view .swiper-container', {
+        direction: 'vertical',
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: '.swiper-pagination'
+        }
+    });
+</script>
+<div class="horizontal-1">
+    <div class="horizontal-11" onload="leftTimer()">
+        <p>淘抢购</p>
+        <p>限时限量汇全网好货</p>
+        <p id="timer">
+
+        </p>
+    </div>
+    <script language="javascript" type="text/javascript">
+        function leftTimer(hour,minute,second){
+            var leftTime = (new Date(hour,minute,second)) - (new Date()); //计算剩余的毫秒数
+            var hours = parseInt(leftTime / 1000 / 60 / 60 % 24 , 10); //计算剩余的小时
+            var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟
+            var seconds = parseInt(leftTime / 1000 % 60, 10);//计算剩余的秒数
+            hours = checkTime(hours);
+            minutes = checkTime(minutes);
+            seconds = checkTime(seconds);
+            setInterval("leftTimer(0,43,30)",1000);
+            document.getElementById("timer").innerHTML = hours+"小时" + minutes+"分"+seconds+"秒";
+        }
+        function checkTime(i){ //将0-9的数字前面加上0，例1变为01
+            if(i<10)
+            {
+                i = "0" + i;
+            }
+            return i;
+        }
+    </script>
+    <div class="horizontal-12">
+        <div class="horizontal-12-t"></div>
+        <div class="horizontal-12-b"></div>
+    </div>
+</div>
+</body>
+</html>

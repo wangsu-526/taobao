@@ -1,0 +1,97 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #eee;
+}
+header{
+    width: 10rem;
+    height: 1.173rem;
+    background: #fe5400 url(../img/header-1.png) no-repeat 0.16rem;
+    background-size: 0.853rem 0.62rem;
+    position: relative;
+}
+.header-r a{
+    position: absolute;
+    width: 8.653rem;
+    height: 0.74rem;
+    background: #b52600;
+    color: white;
+    border-radius: 0.126rem;
+    line-height: 0.74rem;
+    top: 0.233rem;
+    right: 0.18rem;
+    font-size: 13px;
+    text-align: center;
+}
+[data-dpr="2"] .header-r a{
+    font-size: 26px;
+}
+[data-dpr="3"] .header-r a{
+    font-size: 39px;
+}
+.header-r .iconfont.icon-fangdajing{
+    font-size: 15px;
+}
+[data-dpr="2"] .header-r .iconfont.icon-fangdajing{
+    font-size: 30px;
+}
+[data-dpr="3"] .header-r .iconfont.icon-fangdajing{
+     font-size: 45px;
+ }
+.banner img{
+    width: 10rem;
+    height: 3.106rem;
+}
+.vertical-view{
+    width: 10rem;
+    background: #fff;
+}
+.vertical-view ul{
+    display: inline-block;
+    justify-content:space-around;
+    padding-left: 0.5rem;
+}
+.vertical-view ul li{
+    width: 1.78rem;
+    height: 2.21rem;
+    float: left;
+    text-align: center;
+    padding-top: 0.35rem;
+    font-size: 13px;
+}
+.vertical-view ul li img{
+    width: 1.78rem;
+}
+[data-dpr="2"] .vertical-view ul li{
+    font-size: 26px;
+}
+[data-dpr="3"] .vertical-view ul li{
+    font-size: 39px;
+}
+.horizontal-view{
+    width: 10rem;
+    height: 1.1rem;
+    background: #fff url(../img/banner-14.png) no-repeat 0.146rem;
+    background-size: 2.76rem 0.62rem;
+    margin-top: 0.0666rem;
+    position: relative;
+}
+.horizontal-view .swiper-container{
+    position: absolute;
+    right: 0.13rem;
+    width: 6.656rem;
+    height: 1.1rem;
+    line-height: 1.1rem;
+}
+.horizontal-view .swiper-container span{
+    border: 0.013rem red solid;
+    padding: 0.106rem;
+    border-radius: 0.103rem;
+    margin-right: 0.2rem;
+}
+.horizontal-1{
+    background: #fff;
+    width: 10rem;
+    margin-top: 0.19rem;
+}
